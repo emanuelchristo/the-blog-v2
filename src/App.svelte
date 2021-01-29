@@ -1,9 +1,20 @@
 <script>
 	import Header from './Header.svelte'
+	import Article from './Article.svelte'
 </script>
 
 <div class="container">
 	<Header />
+	<main>
+		<Article />
+		<Article />
+		<Article />
+		<Article />
+		<Article />
+		<Article />
+		<Article />
+		<Article />
+	</main>
 </div>
 
 <style>
