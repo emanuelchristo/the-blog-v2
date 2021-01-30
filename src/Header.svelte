@@ -30,10 +30,14 @@
 </header>
 
 <style>
+    header {
+        height: 12rem;
+        background-color: #fff;
+    }
     .top {
         display: flex;
         width: 100%;
-        height: 9rem;
+        height: 75%;
     }
 
     .left {
@@ -98,7 +102,7 @@
     .bottom {
         border-top: 1px solid #000;
         border-bottom: 1px solid #000;
-        height: 3rem;
+        height: 25%;
         width: 100%;
         display: flex;
         align-items: center;

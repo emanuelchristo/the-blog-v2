@@ -1,10 +1,10 @@
 <script>
-
+    export let index
 </script>
 
 <article>
     <div class="left">
-        <p id="slno">1.</p>
+        <p id="slno">{index}.</p>
     </div>
     <div class="middle">
         <div class="image"></div>
@@ -14,7 +14,9 @@
             <h2>This is a very lengthy title for seeing how it looks. Ok? Lorem Epsom this is a good title.</h2>
             <p>    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in repreh</p>
         </div>
-        <div class="bottom"></div>
+        <div class="bottom">
+            <p id="date">12 Jan 2021</p>
+        </div>
     </div>
 </article>
 
@@ -62,6 +64,16 @@
         margin: 0.5rem 0;
         text-indent: 2rem;
         letter-spacing: 0.09rem;
+    }
+
+    .bottom {
+        
+    }
+    #date {
+        all: unset;
+        text-transform: uppercase;
+        font-family: Roboto Mono;
+        font-size: 0.8rem;
     }
  
 </style>
