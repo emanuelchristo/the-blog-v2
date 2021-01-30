@@ -114,11 +114,32 @@
     }
     #social {
         font-family: Bungee Shade;
+        font-weight: normal;
         margin-bottom: 0.25rem;
     }
     #tech {
         font-family: "Press Start 2P";
         font-size: 1.3rem;
         margin-top: 0.1rem;
+    }
+
+    @media (max-width: 600px) {
+        header {
+            height: 8rem;
+        }
+        .top {
+            height: 60%;
+        }
+        .bottom{
+            height: 40%;
+        }
+
+        .top .left, .top .right {
+            display: none;
+        }
+
+        h1 {
+            font-size: 2rem;
+        }
     }
 </style>

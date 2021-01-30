@@ -1,4 +1,5 @@
 <script>
+    import {onMount} from 'svelte'
     let types = [ "social", "tech"]
     let titles = [
         "Justin Timberlake’s Big-Screen Reboot",
@@ -9,13 +10,20 @@
         "Madeleine L’Engle’s Private Correspondence With Ahmad Rahman"
     ]
 
+    let img
+    let size = 400+Math.floor(Math.random()*100)
+
+    // onMount(() => {
+    //     img.style.backgroundImage = `url(https://picsum.photos/${size}`
+    // })
+
     let type = types[Math.floor(Math.random()*types.length)]
     let title = titles[Math.floor(Math.random()*titles.length)]
 </script>
 
 <article class={type}>
     <div class="top">
-        <div class="image"></div>
+        <div class="image" bind:this={img}></div>
     </div>
     <div class="bottom">
         <h3 class={type}>{type}</h3>
@@ -28,20 +36,22 @@
     article {
         display: inline-block;
         width: 18rem;
-        padding: 1rem;
-        margin: 1rem;
+        padding: 1.5rem;
     }
     article.social {
-        background-color: ivory;
+        /* background-color: ivory; */
     }
     article.tech {
-        background-color: aliceblue;
+        /* background-color: aliceblue; */
     }
 
     .image {
         width: 100%;
         height: 9rem;
         border: 1px solid #000;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
     }
 
     .bottom {
@@ -51,7 +61,7 @@
     h3 {
         text-transform: uppercase;
         font-weight: 400;
-        font-size: 1rem;
+        font-size: 1.1rem;
         margin: 0;
         margin-top: 1.1rem;
     }
@@ -62,6 +72,7 @@
     }
     h3.social {
         font-family: Bungee Shade;
+        font-weight: normal;
     }
     h2 {
         font-weight: 500;
@@ -75,6 +86,7 @@
         text-transform: uppercase;
         font-size: 0.7rem;
         margin: 0;
+        margin-top: 0.8rem;
         font-style: italic;
     }
 </style>

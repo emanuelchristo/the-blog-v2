@@ -48,6 +48,7 @@
         border: 1px solid #000;
         width: 100%;
         height: 86%;
+        min-height: 12rem;
     }
 
     .right {
@@ -75,6 +76,24 @@
         font-family: Roboto Mono;
         font-size: 0.8rem;
         font-style: italic;
+    }
+
+    @media (max-width: 1200px) {
+        .left {
+            display: none;
+        }
+
+        article {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            padding-top: 2.7rem;
+        }
+
+        h2 {
+            font-size: 1.4rem;
+            line-height: 2rem;
+        }
     }
  
 </style>
