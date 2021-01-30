@@ -97,6 +97,7 @@
     h1 {
         font-size: 3rem;
         text-decoration: underline wavy pink;
+        text-decoration-thickness: 0.15rem;
     }
 
     .bottom {

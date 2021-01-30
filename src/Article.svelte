@@ -74,6 +74,7 @@
         text-transform: uppercase;
         font-family: Roboto Mono;
         font-size: 0.8rem;
+        font-style: italic;
     }
  
 </style>
