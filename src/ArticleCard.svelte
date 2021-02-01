@@ -28,9 +28,11 @@
     article {
         display: inline-block;
         width: 100%;
-        min-width: 18rem;
-        max-width: 23rem;
-        padding: 1.5rem;
+        min-width: 16rem;
+        max-width: 18rem;
+        padding: 20px;
+        margin-bottom: 20px;
+        background-color: rgb(255, 252, 238);
     }
 
     .image {
@@ -44,37 +46,32 @@
 
     .bottom {
         text-align: center;
-        padding: 0 1.3rem;
+        padding: 20px;
+        padding-bottom: 0;
     }
     h3 {
         text-transform: uppercase;
         font-weight: 400;
-        font-size: 1.1rem;
+        font-size: 1rem;
         margin: 0;
-        margin-top: 1.1rem;
     }
     h3.tech {
-        margin-top: 1.25rem;
-        font-size: 0.9rem;
         font-family: "Press Start 2P";
     }
     h3.social {
         font-family: Bungee Shade;
-        font-weight: normal;
     }
     h2 {
         font-weight: 500;
         font-size: 1.3rem;
         line-height: 1.8rem;
-        margin-bottom: 0.6rem;
-        margin-top: 1.2rem;
+        margin: 20px 0;
     }
     p {
         letter-spacing: 0.1rem;
         text-transform: uppercase;
         font-size: 0.7rem;
         margin: 0;
-        margin-top: 0.8rem;
         font-style: italic;
     }
 </style>

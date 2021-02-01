@@ -30,13 +30,11 @@
 
 <style>
     header {
-        height: 12rem;
         background-color: #fff;
     }
     .top {
         display: flex;
         width: 100%;
-        height: 75%;
     }
 
     .left {
@@ -100,13 +98,17 @@
     .bottom {
         border-top: 1px solid #000;
         border-bottom: 1px solid #000;
-        height: 25%;
+        height: 3rem;
         width: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
     }
     h2 {
+        font-size: 1.3rem;
         margin: 0 1rem;
     }
     #social {
@@ -115,4 +117,33 @@
     #tech {
         font-family: "Press Start 2P";
     }
+
+
+	@media (max-width: 1439px) {
+		/* Laptop L */
+	}
+	@media (max-width: 1023px) {
+		/* Laptop */
+	}
+	@media (max-width: 767px) {
+		/* Tablet */
+        .top .left, .top .right {
+            display: none;
+        }
+        .top {
+            height: 6rem;
+        }
+        h1 {
+            font-size: 2rem;
+        }
+	}
+	@media (max-width: 424px) {
+		/* Mobile L */
+	}
+	@media (max-width: 374px) {
+		/* Mobile M */
+	}
+	@media (max-width: 319px) {
+		/* Mobile S */
+	}
 </style>

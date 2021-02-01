@@ -7,7 +7,7 @@
 
 <div class="container">
 	<div class="header-wrapper">
-		<!-- <Header /> -->
+		<Header />
 	</div>
 
 	<main>
@@ -41,8 +41,9 @@
 <style>
 	.container {
 		min-width: 300px;
-		max-width: 1300px;
+		max-width: 1200px;
 		width: 100%;
+		padding: 0 20px;
 		margin: 0 auto;
 		position: relative;
 		overflow: hidden;
@@ -64,30 +65,32 @@
 	}
 
 	.articles-container {
+		padding-bottom: 20px;
 		display: flex;
 		border-bottom: 1px solid #000;
 	}
-	h3 {
-		margin: 0;
-		margin-top: 2.2rem;
+	.articles-container h3 {
+		margin: 20px 0;
 		font-size: 2rem;
 		text-transform: capitalize;
 		font-weight: 400;
 		border-bottom: 1.3px solid #f00;
 	}
 	.left {
+		margin: 0 20px;
 		flex: 1;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 	}
 	.middle {
-		flex: 3;
+		flex: 2;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 	}
 	.right {
+		margin: 0 20px;
 		flex: 1;
 		display: flex;
 		flex-direction: column;
@@ -96,54 +99,28 @@
 
 	.todays-article-wrapper {
 		width: 100%;
-		max-width: 1025px;
+		max-width: 1024px;
 		margin: 0 auto;
 	}
 	.todays-article-wrapper .heading-wrapper {
 		width: 100%;
-		height: 8rem;
 		display: flex;
 		align-items: center;
 		justify-content: center;
 	}
 	.todays-article-wrapper h3 {
-		all: unset;
+		text-align: center;
+		margin: 40px 0 20px 0;
 		font-size: 3rem;
-		margin: 3rem 0 2rem 0;
 		border-bottom: 1px solid #f00;
 	}
 
-	@media (max-width: 319px) {
-        /* smartphones, iPhone, portrait 480x320 phones */
-		.todays-article-wrapper h3 {
-			font-size: 2rem;
-		}
-    }
-    @media (max-width: 374px) {
-        /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
-    } 
-    @media (max-width: 424px) {
-        /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
-		.todays-article-wrapper {
-			width: 100%;
-		}
 
-		.todays-article-wrapper h3 {
-			font-size: 2.3rem;
-			margin: 4rem 0 2rem 0;
-		}
-    }
-    @media (max-width: 767px) {
-        /* tablet, landscape iPad, lo-res laptops ands desktops */
-		.todays-article-wrapper h3 {
-			margin: 4rem 0 2rem 0;
-		}
-		.todays-article-wrapper {
-			width: 100%;
-		}
-    }
-    @media (max-width: 1023px) {
-        /* big landscape tablets, laptops, and desktops */
+	@media (max-width: 1439px) {
+		/* Laptop L */
+	}
+	@media (max-width: 1023px) {
+		/* Laptop */
 		.container {
 			max-width: 900px;
 		}
@@ -161,8 +138,24 @@
 		.articles-container .right {
 			order: 3;
 		}
-    }
-    @media (max-width: 1439px) {
-        /* hi-res laptops and desktops */
-    }
+	}
+	@media (max-width: 767px) {
+		/* Tablet */
+
+		.todays-article-wrapper h3 {
+			font-size: 2.5rem;
+		}
+	}
+	@media (max-width: 424px) {
+		/* Mobile L */
+		.todays-article-wrapper h3 {
+			font-size: 1.8rem;
+		}
+	}
+	@media (max-width: 374px) {
+		/* Mobile M */
+	}
+	@media (max-width: 319px) {
+		/* Mobile S */
+	}
 </style>
