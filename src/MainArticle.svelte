@@ -1,14 +1,16 @@
 <script>
-
 </script>
 
 <article>
     <div class="top">
-        <div class="image"></div>
+        <div class="image" />
     </div>
     <div class="bottom">
         <h2 id="title">Inside Biden’s Plan to Push Through Vaccine Chaos</h2>
-        <p id="subtitle">Biden inherited a rocky vaccine rollout, but the White House hopes a congressional pressure campaign can turn things around.</p>
+        <p id="subtitle">
+            Biden inherited a rocky vaccine rollout, but the White House hopes a
+            congressional pressure campaign can turn things around.
+        </p>
         <p id="date">23 JAN 2021</p>
     </div>
 </article>
@@ -16,7 +18,8 @@
 <style>
     article {
         padding: 1.5rem;
-        width: 38rem;
+        width: 100%;
+        min-width: 300px;
     }
 
     .image {

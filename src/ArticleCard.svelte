@@ -1,29 +1,21 @@
 <script>
-    import {onMount} from 'svelte'
-    let types = [ "social", "tech"]
+    let types = ["social", "tech"];
     let titles = [
         "Justin Timberlake’s Big-Screen Reboot",
         "This is a small titile",
         "Biden inherited a rocky vaccine rollout, but the White House",
         "Angry Hedge Fund Billionaire Leon Cooperman Is Mad at GameStop",
         "The Second-Hardest Job in the World Is Up for Grabs",
-        "Madeleine L’Engle’s Private Correspondence With Ahmad Rahman"
-    ]
+        "Madeleine L’Engle’s Private Correspondence With Ahmad Rahman",
+    ];
 
-    let img
-    let size = 400+Math.floor(Math.random()*100)
-
-    // onMount(() => {
-    //     img.style.backgroundImage = `url(https://picsum.photos/${size}`
-    // })
-
-    let type = types[Math.floor(Math.random()*types.length)]
-    let title = titles[Math.floor(Math.random()*titles.length)]
+    let type = types[Math.floor(Math.random() * types.length)];
+    let title = titles[Math.floor(Math.random() * titles.length)];
 </script>
 
 <article class={type}>
     <div class="top">
-        <div class="image" bind:this={img}></div>
+        <div class="image" />
     </div>
     <div class="bottom">
         <h3 class={type}>{type}</h3>
@@ -35,14 +27,10 @@
 <style>
     article {
         display: inline-block;
-        width: 18rem;
+        width: 100%;
+        min-width: 18rem;
+        max-width: 23rem;
         padding: 1.5rem;
-    }
-    article.social {
-        /* background-color: ivory; */
-    }
-    article.tech {
-        /* background-color: aliceblue; */
     }
 
     .image {
